@@ -1,8 +1,8 @@
 #!/usr/bin/node
 const variable = process.argv[2];
-if (variable === number) {
-	console.log('My number:', variable | 0);
+if (isNaN(variabl)){
+	console.log('Not a number');
 }
 else {
-	console.log('Not a number');
+	console.log('My number:', value | 0);
 }
