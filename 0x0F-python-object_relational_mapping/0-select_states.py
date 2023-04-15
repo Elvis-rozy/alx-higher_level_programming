@@ -15,11 +15,11 @@ import sys
 if __name__ == "__main__":
     dtb = MySQLdb.connect(host="localhost", user=sys.argv[1],
                          passwd=sys.argv[2], db=sys.argv[3], port=3306)
-    cusor = db.cursor()
-    cusor.execute("SELECT * FROM states")
-    the_rows = cusor.fetchall()
+    cusr = dtb.cursor()
+    cusr.execute("SELECT * FROM states")
+    the_rows = cusr.fetchall()
     for row in the_rows:
         print(row)
-    cusor.close()
+    cusr.close()
     dtb.close()
 
