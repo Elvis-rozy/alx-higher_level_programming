@@ -6,6 +6,7 @@
 -- Connects to a MySQL server running on localhost at port 3306
 -- Results sorted in ascending order by states.id
 -- Code should not be executed when imported
+
 """
 import MySQLdb
 import sys
