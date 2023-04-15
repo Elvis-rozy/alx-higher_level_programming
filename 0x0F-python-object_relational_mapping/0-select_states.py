@@ -8,17 +8,17 @@
 -- Code should not be executed when imported
 
 """
+from sys import argv
 import MySQLdb
-import sys
-
 
 if __name__ == "__main__":
-    dtb = MySQLdb.connect(host="localhost", user=sys.argv[1],
-                         passwd=sys.argv[2], db=sys.argv[3], port=3306)
-    cusr = dtb.cursor()
-    cusr.execute("SELECT * FROM states")
-    the_rows = cusr.fetchall()
-    for row in the_rows:
-        print(row)
-    cusr.close()
+    connection = MySQLdb.connect(
+        host="localhost", port=3306, user=argv[1],
+        password=argv[2], database=argv[3])
+    cursr = con.cursor()
+    cursr.execute("SELECT * FROM states ORDER BY id ASC")
+    dtb = cursr.fetchall()
+    for dt in dtb:
+        print(dt)
+    cursr.close()
     dtb.close()
