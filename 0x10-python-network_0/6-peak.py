@@ -3,6 +3,7 @@
 finds a peak(highest) in a list of unsorted integers
 """
 
+
 def find_peak(list_of_integers):
     """
     finds the peak in the array
