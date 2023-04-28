@@ -1,12 +1,16 @@
 #!/usr/bin/python3
 """
-You must use the package urllib and you must use a with statement
+script that fetches https://alx-intranet.hbtn.io/status
 """
 
 
 if __name__ == '__main__':
     import urllib.request
-
+    """
+    You must use the package urllib
+    You are not allowed to import any packages other than urllib
+    You must use a with statement
+    """
     with urllib.request.urlopen('https://alx-intranet.hbtn.io/status') as res:
         content = res.read()
         print("Body response:")
