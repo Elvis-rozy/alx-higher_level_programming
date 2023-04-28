@@ -1,8 +1,8 @@
 #!/usr/bin/python3
-"""Script that takes:
-- a letter
-- sends POST request to http://0.0.0.0:5000/search_user
-with the letter as a parameter.
+"""Script that:
+- takes a letter
+- POST to http://0.0.0.0:5000/search_user
+- with the letter as a parameter.
 """
 import sys
 import requests
