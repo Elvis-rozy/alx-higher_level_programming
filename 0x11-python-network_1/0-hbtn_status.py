@@ -5,6 +5,7 @@ You must use the package urllib and you must use a with statement
 import urllib.request
 
 
+
 def main():
     url = 'https://alx-intranet.hbtn.io/status'
     with urllib.request.urlopen(url) as response:
