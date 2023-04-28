@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Script that:
+"""A script tha:
 - takes in a letter
 - sends POST request to http://0.0.0.0:5000/search_user
 with the letter as a parameter.
