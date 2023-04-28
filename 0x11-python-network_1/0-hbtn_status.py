@@ -6,9 +6,6 @@ import urllib.request
 
 
 def main():
-    """
-    fetches https://alx-intranet.hbtn.io/status and prints the response
-    """
     url = 'https://alx-intranet.hbtn.io/status'
     with urllib.request.urlopen(url) as response:
         html = response.read()
