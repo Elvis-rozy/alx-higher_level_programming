@@ -1,16 +1,13 @@
 #!/usr/bin/python3
 """
-    You must use the package urllib
-    You are not allowed to import any packages other than urllib
-    You must use a with statement
+    You must use the package urllib, You are not allowed to import any packages other than urllib, You must use a with statement
 """
 import urllib.request
 
 
 def main():
     """
-    Python script that fetches https://alx-intranet.hbtn.io/status
-    and prints the response
+    Python script that fetches https://alx-intranet.hbtn.io/status and prints the response
     """
     url = 'https://alx-intranet.hbtn.io/status'
     with urllib.request.urlopen(url) as response:
