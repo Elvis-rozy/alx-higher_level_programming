@@ -1,6 +1,9 @@
 #!/usr/bin/python3
-"""
-Module to access to the GitHub API and uses the information
+"""Script that:
+- takes your GitHub credentials 
+- (username and password)
+- and uses the GitHub API to 
+- display your id
 """
 import requests
 from requests.auth import HTTPBasicAuth
@@ -8,10 +11,6 @@ from sys import argv
 
 
 def main(argv):
-    """
-    Script takes your GitHub credentials (username and password) and
-    uses the GitHub API to display your id.
-    """
     user = argv[1]
     password = argv[2]
     response = requests.get('https://api.github.com/user',
